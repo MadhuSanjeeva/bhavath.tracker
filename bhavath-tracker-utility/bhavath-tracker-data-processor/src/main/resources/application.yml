@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: local
+
+server:
+  port: 8088
+
+  
+
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 120000
+  route:
+    authentication:
+      path: auth
+      refresh: refresh
+      
+sms:
+  apiKey : 9VNpCj4ER+A-kBJuRsqUzpxkLo7LCHvHBhhSODAfhd
+  sender : TXTLCL
+  
+
+route:
+  url: http://111.93.16.246:8099?vehicleNumber=
+    

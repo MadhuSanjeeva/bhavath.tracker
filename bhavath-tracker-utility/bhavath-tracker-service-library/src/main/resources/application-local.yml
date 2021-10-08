@@ -1,0 +1,25 @@
+
+# Postgres db configuration
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: admin
+  jpa:
+    database_platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+aws:
+  accesskey: AKIAIZJKZQ5RWNYX5SBA
+  secretaccesskey: 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
+  region : ap-southeast-1
+  sns:
+    topicArn: arn:aws:sns:ap-southeast-1:233385961623:greenark
+    topicName: greenark
+    SMSType: Promotional
+    phoneNumberRegex: ^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$
+    senderIDRegex: test
+    senderID: GreenArk16
+
